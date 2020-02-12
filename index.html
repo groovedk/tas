@@ -594,9 +594,16 @@
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=8t5kvgmdla"></script>
 <script>
     var mapOptions = {
-        center: new naver.maps.LatLng(37.5666103, 126.9783882),
-        zoom: 10
+        center: new naver.maps.LatLng(37.567132, 126.978442),
+        zoom: 14
     };
+
+
+    var marker = new naver.maps.Marker({
+        position: map.getCenter(),
+        map: map,
+        clickable: true
+    });
 
     var map = new naver.maps.Map('tasystemIsHere', mapOptions);
 </script>
