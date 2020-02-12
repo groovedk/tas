@@ -529,19 +529,11 @@
                     <h2 class="ftco-heading-2">Map</h2>
 
 
-                    <div id="map" style="width:100%;height:200px;">
+                    <div id="tasystemIsHere" style="width:100%;height:200px;">
                         loading...
                     </div>
 
-                    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=8t5kvgmdla"></script>
-                    <script>
-                        var mapOptions = {
-                            center: new naver.maps.LatLng(37.5666103, 126.9783882),
-                            zoom: 10
-                        };
 
-                        var map = new naver.maps.Map('map', mapOptions);
-                    </script>
 
 
                     <!--
@@ -598,6 +590,16 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=8t5kvgmdla"></script>
+<script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.5666103, 126.9783882),
+        zoom: 10
+    };
+
+    var map = new naver.maps.Map('tasystemIsHere', mapOptions);
+</script>
 
 </body>
 </html>
