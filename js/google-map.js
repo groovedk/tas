@@ -44,13 +44,13 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
 
-    /*
+
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
         title: 'TASYSTEM'
     });
-    */
+
 
 /*
     var addresses = ['New York'];
