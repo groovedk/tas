@@ -108,23 +108,23 @@
                         <input id="honeypot" type="text" name="honeypot" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="이름" name="name" />
+                        <input type="text" class="form-control" placeholder="이름" name="name" id="cForm_name" />
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="연락처" name="mobile" />
+                        <input type="text" class="form-control" placeholder="연락처" name="mobile" id="cForm_mobile" />
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email" name="email" />
+                        <input type="text" class="form-control" placeholder="Email" name="email" id="cForm_email" />
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="제목" name="subject" />
+                        <input type="text" class="form-control" placeholder="제목" name="subject" id="cForm_subject" />
                     </div>
                     <div class="form-group">
-                        <textarea name="content" id="" cols="30" rows="7" class="form-control"
+                        <textarea name="content" id="cForm_content" id="" cols="30" rows="7" class="form-control"
                                   placeholder="문의내용"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" />
+                        <input type="submit" id="submitBtn" value="Send Message" class="btn btn-primary py-3 px-5"  />
                     </div>
 
                     <div style="display: none;" class="thankyou_message" id="thankyou_message">
@@ -236,12 +236,14 @@
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 
-<script data-cfasync="false" type="text/javascript"
-        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<!--<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>-->
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
 <script>
     function maskHide(){
         $("#thankyou_message").hide();
+        $("#submitBtn").prop("disabled", false);
+        $("#submitBtn").removeClass("not-allow");
     }
 </script>
 </body>

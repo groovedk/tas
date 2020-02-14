@@ -34,3 +34,7 @@
     color: #000;
     text-align: center;
 }
+
+.not-allow{
+    cursor: not-allowed;
+}
